@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moazzam Mahmood — Web Developer &amp; IT Professional</title>
+  <meta name="description" content="Cinematic portfolio of Moazzam Mahmood, Web Developer, Computer Teacher at Brains College, and BSCS Student. Exploring modern web solutions, responsive development, and IT systems.">
+  <meta name="keywords" content="Moazzam Mahmood, Web Developer, Computer Teacher, Brains College, BSCS, Virtual University, WordPress, PHP, JavaScript, Pakistan">
+  <meta name="author" content="Moazzam Mahmood">
+
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Moazzam Mahmood — Web Developer &amp; IT Professional">
+  <meta property="og:description" content="Creating high-performance websites, interactive digital interfaces, and dependable web solutions.">
+  <meta property="og:image" content="assets/images/moazzam-portrait.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 3D Background Canvas & Cinematic Overlays -->
+  <div id="bg-canvas-container" aria-hidden="true">
+    <canvas id="three-canvas"></canvas>
+  </div>
+  <div class="cinematic-vignette" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       Navigation Header
+       ========================================================================= -->
+  <header class="header" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo / Wordmark -->
+      <a href="#home" class="brand-logo" aria-label="Moazzam Mahmood Home">
+        <div class="brand-badge">MM</div>
+        <span class="brand-text">MOAZZAM<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.82rem;">
+          <i data-lucide="mail"></i> Let's Connect
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <a href="#home" class="mobile-nav-link active">Home</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#contact" class="btn btn-primary" style="margin-top: 16px;">
+      <i data-lucide="mail"></i> Get In Touch
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       Main Content Container
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         Hero Section
+         ======================================================================= -->
+    <section id="home" class="hero-section" aria-label="Introduction">
+      <div class="container hero-grid">
+        <!-- Hero Left Content -->
+        <div class="hero-content">
+          <div class="section-tag hero-badge">
+            <span class="dot"></span> WEB DEVELOPER • IT PROFESSIONAL
+          </div>
+          <h1 class="hero-title">
+            I BUILD <span class="text-gradient-cyan">DIGITAL</span> EXPERIENCES.
+          </h1>
+          <p class="hero-description">
+            I craft modern websites, interactive interfaces, and dependable digital solutions. Combining 2–3 years of hands-on web development with computer instruction and technical systems expertise.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="layers"></i> Explore My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i data-lucide="send"></i> Let's Connect
+            </a>
+          </div>
+
+          <!-- Verified Key Indicators -->
+          <div class="hero-stats-strip">
+            <div class="hero-stat-item">
+              <div class="hero-stat-value">2–3<span>+</span></div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-value">4<span>+</span></div>
+              <div class="hero-stat-label">Production Platforms</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="hero-stat-value">Brains<span> Col.</span></div>
+              <div class="hero-stat-label">Computer Teacher</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right 3D Portrait Presentation -->
+        <div class="hero-portrait-wrapper">
+          <div class="portrait-glow-sphere" aria-hidden="true"></div>
+
+          <!-- 3D Card Container with Perspective -->
+          <div class="portrait-3d-card" role="figure" aria-label="Photograph of Moazzam Mahmood">
+            <div class="portrait-frame">
+              <img src="assets/images/moazzam-portrait.png" alt="Moazzam Mahmood — Web Developer and IT Professional" class="portrait-img" loading="eager">
+              <div class="portrait-lighting-overlay" aria-hidden="true"></div>
+
+              <!-- Identity Footer Overlay -->
+              <div class="portrait-identity-pill">
+                <div>
+                  <div class="portrait-identity-name">Moazzam Mahmood</div>
+                  <div class="portrait-identity-role">Web Developer &amp; IT Professional</div>
+                </div>
+                <div class="status-indicator">
+                  <span class="status-dot"></span> Available
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasteful Floating Skill Badges -->
+          <div class="floating-badge badge-1" aria-hidden="true">
+            <i data-lucide="code-2"></i> JavaScript
+          </div>
+          <div class="floating-badge badge-2" aria-hidden="true">
+            <i data-lucide="server"></i> PHP
+          </div>
+          <div class="floating-badge badge-3" aria-hidden="true">
+            <i data-lucide="layout"></i> UI Development
+          </div>
+          <div class="floating-badge badge-4" aria-hidden="true">
+            <i data-lucide="globe"></i> WordPress
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <div class="mouse-wheel" aria-hidden="true"></div>
+        <span>SCROLL TO EXPLORE</span>
+      </a>
+    </section>
+
+    <!-- =======================================================================
+         About Me Section
+         ======================================================================= -->
+    <section id="about" class="section about-section" aria-label="About Moazzam Mahmood">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="dot"></span> ABOUT ME</div>
+          <h2 class="section-title">Bridging Code, Instruction &amp; Technology</h2>
+          <p class="section-subtitle">
+            An authentic look into my background as an active web developer, computer science educator, and undergraduate technologist.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Editorial Intro Left -->
+          <div class="about-editorial">
+            <p class="about-lead">
+              "Building modern web applications requires more than just code — it demands clean architecture, responsive usability, and genuine dedication to performance."
+            </p>
+            <p class="about-body">
+              My name is <strong>Moazzam Mahmood</strong>. With approximately 2–3 years of specialized web development practice, I develop production-grade websites, custom WordPress solutions, and responsive user interfaces that deliver commercial value.
+            </p>
+            <p class="about-body">
+              Beyond engineering web interfaces, I serve as a <strong>Computer Teacher at Brains College</strong>, where I mentor students in computer applications, programming fundamentals, and IT operations. Teaching reinforces my commitment to clarity, precision, and continuous learning.
+            </p>
+            <p class="about-body">
+              I am currently pursuing my <strong>BSCS (Bachelor of Science in Computer Science) at Virtual University of Pakistan</strong>, grounding my everyday development work in core software engineering principles, computer systems, and data structures.
+            </p>
+
+            <div class="about-actions">
+              <!-- CV Download Button (Connected to Verified Modal) -->
+              <button class="btn btn-primary modal-trigger" aria-haspopup="dialog">
+                <i data-lucide="file-text"></i> Download CV
+              </button>
+              <a href="#contact" class="btn btn-secondary">
+                <i data-lucide="message-circle"></i> Direct Inquiries
+              </a>
+            </div>
+          </div>
+
+          <!-- Verified Metrics Stack Right -->
+          <div class="about-card-stack">
+            <div class="glass-panel metric-card">
+              <div class="metric-icon-box">
+                <i data-lucide="code"></i>
+              </div>
+              <div class="metric-info">
+                <div class="metric-number"><span data-counter-target="2.5">2.5</span> Years</div>
+                <div class="metric-label">Web Development Practice</div>
+                <div class="metric-sublabel">Frontend, Backend &amp; CMS Systems</div>
+              </div>
+            </div>
+
+            <div class="glass-panel metric-card">
+              <div class="metric-icon-box">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="metric-info">
+                <div class="metric-number" style="font-size: 1.35rem;">Brains College</div>
+                <div class="metric-label">Computer Science Teacher</div>
+                <div class="metric-sublabel">Instruction &amp; Lab Supervision</div>
+              </div>
+            </div>
+
+            <div class="glass-panel metric-card">
+              <div class="metric-icon-box">
+                <i data-lucide="book-open"></i>
+              </div>
+              <div class="metric-info">
+                <div class="metric-number" style="font-size: 1.35rem;">Virtual University</div>
+                <div class="metric-label">BS Computer Science (BSCS)</div>
+                <div class="metric-sublabel">Core Algorithms &amp; Systems</div>
+              </div>
+            </div>
+
+            <div class="glass-panel metric-card">
+              <div class="metric-icon-box">
+                <i data-lucide="network"></i>
+              </div>
+              <div class="metric-info">
+                <div class="metric-number" style="font-size: 1.35rem;">IT &amp; Systems</div>
+                <div class="metric-label">Technical Support &amp; Networking</div>
+                <div class="metric-sublabel">Hardware, Diagnostics &amp; OS Operations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Skills Section
+         ======================================================================= -->
+    <section id="skills" class="section skills-section" aria-label="Technical Skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="dot"></span> SKILLS &amp; PROFICIENCIES</div>
+          <h2 class="section-title">Technical Toolset &amp; Capabilities</h2>
+          <p class="section-subtitle">
+            Structured competencies across web technologies, systems infrastructure, and expanding computer science domains.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <!-- 1. Frontend Development -->
+          <div class="skills-category-group">
+            <div class="category-header">
+              <i data-lucide="monitor" class="category-icon"></i>
+              <h3 class="category-title">Frontend Development</h3>
+              <span class="category-count">5 Core Skills</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="file-code"></i></div>
+                <div>
+                  <div class="skill-name">HTML5</div>
+                  <div class="skill-level-indicator">Semantic Structure</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="palette"></i></div>
+                <div>
+                  <div class="skill-name">CSS3</div>
+                  <div class="skill-level-indicator">Flexbox, Grid &amp; 3D</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="zap"></i></div>
+                <div>
+                  <div class="skill-name">JavaScript</div>
+                  <div class="skill-level-indicator">ES6+ &amp; DOM Control</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="smartphone"></i></div>
+                <div>
+                  <div class="skill-name">Responsive Web Design</div>
+                  <div class="skill-level-indicator">Mobile-First Layouts</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="boxes"></i></div>
+                <div>
+                  <div class="skill-name">jQuery</div>
+                  <div class="skill-level-indicator">DOM &amp; Event Handling</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Backend & CMS -->
+          <div class="skills-category-group">
+            <div class="category-header">
+              <i data-lucide="server" class="category-icon"></i>
+              <h3 class="category-title">Backend &amp; CMS Systems</h3>
+              <span class="category-count">4 Technologies</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="terminal"></i></div>
+                <div>
+                  <div class="skill-name">PHP</div>
+                  <div class="skill-level-indicator">Server-Side Logic</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="database"></i></div>
+                <div>
+                  <div class="skill-name">MySQL</div>
+                  <div class="skill-level-indicator">Relational Data &amp; Queries</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="layout-template"></i></div>
+                <div>
+                  <div class="skill-name">WordPress</div>
+                  <div class="skill-level-indicator">Custom Themes &amp; Elementor</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="code"></i></div>
+                <div>
+                  <div class="skill-name">Python</div>
+                  <div class="skill-level-indicator">Scripting &amp; Algorithms</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Additional IT Skills -->
+          <div class="skills-category-group">
+            <div class="category-header">
+              <i data-lucide="cpu" class="category-icon"></i>
+              <h3 class="category-title">IT Infrastructure &amp; Operations</h3>
+              <span class="category-count">5 Competencies</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="hard-drive"></i></div>
+                <div>
+                  <div class="skill-name">Computer Systems</div>
+                  <div class="skill-level-indicator">Hardware &amp; Assembly</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="network"></i></div>
+                <div>
+                  <div class="skill-name">Networking</div>
+                  <div class="skill-level-indicator">LAN, Routers &amp; Protocols</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="file-spreadsheet"></i></div>
+                <div>
+                  <div class="skill-name">Microsoft Office</div>
+                  <div class="skill-level-indicator">Word, Excel, PowerPoint</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="keyboard"></i></div>
+                <div>
+                  <div class="skill-name">Data Entry</div>
+                  <div class="skill-level-indicator">High Accuracy &amp; Speed</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="pen-tool"></i></div>
+                <div>
+                  <div class="skill-name">Graphic Design Basics</div>
+                  <div class="skill-level-indicator">Visual Assets &amp; Layout</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Additional Professional Interests -->
+          <div class="skills-category-group">
+            <div class="category-header">
+              <i data-lucide="sparkles" class="category-icon"></i>
+              <h3 class="category-title">Specialized Interests &amp; Studies</h3>
+              <span class="category-count">4 Domains</span>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="brain"></i></div>
+                <div>
+                  <div class="skill-name">Machine Learning</div>
+                  <div class="skill-level-indicator">Core Concepts &amp; Models</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="message-square-code"></i></div>
+                <div>
+                  <div class="skill-name">Prompt Engineering</div>
+                  <div class="skill-level-indicator">LLM Workflows &amp; Tooling</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="shield-check"></i></div>
+                <div>
+                  <div class="skill-name">Basic Cybersecurity</div>
+                  <div class="skill-level-indicator">Security Hygiene &amp; Auditing</div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-icon-wrap"><i data-lucide="search"></i></div>
+                <div>
+                  <div class="skill-name">Digital Forensics</div>
+                  <div class="skill-level-indicator">Investigation Fundamentals</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Projects Showcase Section
+         ======================================================================= -->
+    <section id="projects" class="section projects-section" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="dot"></span> PORTFOLIO SHOWCASE</div>
+          <h2 class="section-title">Selected Commercial Work</h2>
+          <p class="section-subtitle">
+            Real production projects built for corporate clients, e-commerce brands, and business platforms.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="wordpress">WordPress &amp; CMS</button>
+          <button class="filter-btn" data-filter="corporate">Corporate &amp; Business</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce &amp; Brand</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Rose Lite LLC -->
+          <article class="glass-panel project-card" data-category="wordpress corporate">
+            <div class="project-browser-frame">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="browser-url-pill">
+                <i data-lucide="lock" class="lock-icon"></i> https://roselitellc.com
+              </div>
+            </div>
+
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/projects/roselite.svg" alt="Rose Lite LLC website preview" class="project-thumbnail" loading="lazy">
+              <div class="project-overlay" aria-hidden="true"></div>
+              <div class="project-category-badge">
+                <span class="live-dot"></span> Live Production
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Rose Lite LLC</h3>
+              <p class="project-description">
+                A polished corporate business platform built for commercial clarity and client trust. Features responsive service presentations, optimized contact flows, and high performance across devices.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">Elementor</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Responsive UX</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://roselitellc.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit Rose Lite LLC website in new tab">
+                  <span>Visit Website</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AquaNix Water Filter -->
+          <article class="glass-panel project-card" data-category="ecommerce brand">
+            <div class="project-browser-frame">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="browser-url-pill">
+                <i data-lucide="lock" class="lock-icon"></i> https://aquanixwaterfilter.com
+              </div>
+            </div>
+
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/projects/aquanix.svg" alt="AquaNix Water Filter website preview" class="project-thumbnail" loading="lazy">
+              <div class="project-overlay" aria-hidden="true"></div>
+              <div class="project-category-badge">
+                <span class="live-dot"></span> Live Production
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">AquaNix Water Filter</h3>
+              <p class="project-description">
+                Product-focused commercial catalog and e-commerce portal presenting advanced multi-stage water filtration systems. Engineered with high-conversion product showcases and responsive inquiry systems.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">WooCommerce</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Product Catalog</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://aquanixwaterfilter.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit AquaNix Water Filter website in new tab">
+                  <span>Visit Website</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Malvin Craft -->
+          <article class="glass-panel project-card" data-category="brand corporate">
+            <div class="project-browser-frame">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="browser-url-pill">
+                <i data-lucide="lock" class="lock-icon"></i> https://malvincraft.com
+              </div>
+            </div>
+
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/projects/malvincraft.svg" alt="Malvin Craft website preview" class="project-thumbnail" loading="lazy">
+              <div class="project-overlay" aria-hidden="true"></div>
+              <div class="project-category-badge">
+                <span class="live-dot"></span> Live Production
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Malvin Craft</h3>
+              <p class="project-description">
+                A crafted brand and artisanal showcase presenting luxury bespoke artifacts with a refined visual identity. Developed with custom frontend interactions, editorial gallery layouts, and mobile performance.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Brand UI</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://malvincraft.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit Malvin Craft website in new tab">
+                  <span>Visit Website</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Soften Traders -->
+          <article class="glass-panel project-card" data-category="corporate brand">
+            <div class="project-browser-frame">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="browser-url-pill">
+                <i data-lucide="lock" class="lock-icon"></i> https://softentraders.com
+              </div>
+            </div>
+
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/projects/softentraders.svg" alt="Soften Traders website preview" class="project-thumbnail" loading="lazy">
+              <div class="project-overlay" aria-hidden="true"></div>
+              <div class="project-category-badge">
+                <span class="live-dot"></span> Live Production
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Soften Traders</h3>
+              <p class="project-description">
+                A corporate enterprise trading website built for an industrial supply and B2B distribution firm. Engineered for rapid product inquiry, quotation routing, search engine visibility, and brand credibility.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">B2B Portal</span>
+                <span class="tech-tag">SEO</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://softentraders.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit Soften Traders website in new tab">
+                  <span>Visit Website</span>
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Experience & Professional Journey Section
+         ======================================================================= -->
+    <section id="experience" class="section experience-section" aria-label="Experience and Education">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <div class="section-tag" style="margin: 0 auto 16px auto;"><span class="dot"></span> PROFESSIONAL PATHWAY</div>
+          <h2 class="section-title">Experience &amp; Milestones</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            A verified chronological overview of my work in teaching, web engineering, higher education, and IT operations.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Milestone 1: Computer Teacher -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><div class="timeline-marker-inner"></div></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Computer Teacher &amp; Instructor</h3>
+                  <div class="timeline-org">
+                    <i data-lucide="building-2"></i> Brains College
+                  </div>
+                </div>
+                <span class="timeline-badge">Academic Role</span>
+              </div>
+              <p class="timeline-desc">
+                Instructing college students in computer science principles, practical software applications, digital workflows, and introductory programming concepts.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Conducting hands-on practical lab sessions in computer systems and software tools.</li>
+                <li>Fostering student technical literacy, typing proficiency, and foundational coding awareness.</li>
+                <li>Preparing instructional material and assessing student development.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Web Developer -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><div class="timeline-marker-inner"></div></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Web Developer &amp; Solutions Specialist</h3>
+                  <div class="timeline-org">
+                    <i data-lucide="globe"></i> Independent / Client Engagements
+                  </div>
+                </div>
+                <span class="timeline-badge">2–3 Years Practice</span>
+              </div>
+              <p class="timeline-desc">
+                Delivering complete website projects for business clients, including corporate platforms, product showcases, and WordPress CMS implementations.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Built and deployed live client platforms including Roselite LLC, Soften Traders, Aquanix, and Malvin Craft.</li>
+                <li>Created custom WordPress themes, configured WooCommerce, and developed responsive user interfaces.</li>
+                <li>Ensured cross-browser compatibility, search optimization, and robust mobile layouts.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Milestone 3: BSCS Virtual University -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><div class="timeline-marker-inner"></div></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Bachelor of Science in Computer Science (BSCS)</h3>
+                  <div class="timeline-org">
+                    <i data-lucide="graduation-cap"></i> Virtual University of Pakistan
+                  </div>
+                </div>
+                <span class="timeline-badge">Undergraduate Degree</span>
+              </div>
+              <p class="timeline-desc">
+                Enrolled in the BSCS program, studying rigorous computer science fundamentals, software engineering methodologies, and database architecture.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Core coursework in Object-Oriented Programming, Data Structures, and Database Management.</li>
+                <li>Studying Computer Networks, Operating Systems, and Discrete Mathematics.</li>
+                <li>Connecting academic software theory directly with hands-on web development.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Milestone 4: IT & Network Support -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><div class="timeline-marker-inner"></div></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">IT Support &amp; Systems Technician</h3>
+                  <div class="timeline-org">
+                    <i data-lucide="server"></i> Technical Systems &amp; Infrastructure
+                  </div>
+                </div>
+                <span class="timeline-badge">Operations &amp; Support</span>
+              </div>
+              <p class="timeline-desc">
+                Hands-on practical experience in workstation diagnosis, hardware upgrades, local area networking, and office software environments.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Configured local area network connections, IP routing, and workstation security settings.</li>
+                <li>Performed operating system installations, hardware replacements, and software troubleshooting.</li>
+                <li>Assisted organizations in data administration and office automation workflows.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Contact Section
+         ======================================================================= -->
+    <section id="contact" class="section contact-section" aria-label="Contact Moazzam Mahmood">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="dot"></span> GET IN TOUCH</div>
+          <h2 class="section-title">Let's Discuss Your Project</h2>
+          <p class="section-subtitle">
+            Whether you need a new website built, a WordPress platform customized, or technical collaboration, feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Information -->
+          <div class="contact-info">
+            <div class="contact-card-list">
+              <div class="glass-panel contact-card">
+                <div class="contact-card-icon"><i data-lucide="map-pin"></i></div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-value">Pakistan</span>
+                </div>
+              </div>
+
+              <div class="glass-panel contact-card">
+                <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Email Address</span>
+                  <span class="contact-card-value">moazzam.dev@example.com</span>
+                </div>
+                <button type="button" class="contact-card-copy-btn copy-trigger" data-copy="moazzam.dev@example.com" aria-label="Copy email address">
+                  Copy
+                </button>
+              </div>
+
+              <div class="glass-panel contact-card">
+                <div class="contact-card-icon"><i data-lucide="briefcase"></i></div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Availability</span>
+                  <span class="contact-card-value">Freelance Projects &amp; IT Consultations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px; font-weight: 500;">
+                Connect on professional platforms:
+              </p>
+              <div class="social-links-strip">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                  <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                  <i data-lucide="linkedin"></i>
+                </a>
+                <button type="button" class="social-link copy-trigger" data-copy="moazzam.dev@example.com" aria-label="Copy Direct Email" title="Copy Email">
+                  <i data-lucide="mail"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="glass-panel contact-form-panel">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill in the fields below and I'll respond as soon as possible.</p>
+
+            <div id="form-alert-success" class="form-alert success" role="alert" style="display: none;"></div>
+            <div id="form-alert-error" class="form-alert error" role="alert" style="display: none;"></div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name <span class="req">*</span></label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name">
+                  <span id="error-name" class="form-error">Please enter your name (min 2 characters).</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address <span class="req">*</span></label>
+                  <input type="email" id="form-email" class="form-input" placeholder="name@domain.com" required autocomplete="email">
+                  <span id="error-email" class="form-error">Please provide a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject <span class="req">*</span></label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Project Inquiry / Collaboration" required>
+                <span id="error-subject" class="form-error">Subject is required (min 3 characters).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message <span class="req">*</span></label>
+                <textarea id="form-message" class="form-textarea" placeholder="Tell me about your project, timeline, and requirements..." required></textarea>
+                <span id="error-message" class="form-error">Message must be at least 10 characters long.</span>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="send"></i> Send Message
+              </button>
+
+              <p class="form-note">
+                <i data-lucide="shield-alert" style="width: 14px; height: 14px; display: inline; vertical-align: middle; color: var(--accent-cyan);"></i>
+                Frontend validated. To connect to live email delivery, integrate with Formspree, EmailJS, or your backend endpoint as detailed in the README.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="brand-logo" aria-label="Moazzam Mahmood">
+          <div class="brand-badge">MM</div>
+          <span class="brand-text">MOAZZAM<span class="dot">.</span></span>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#experience" class="footer-link">Experience</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+
+        <button class="back-to-top" aria-label="Scroll to top of page" title="Back to Top">
+          <i data-lucide="arrow-up"></i>
+        </button>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Moazzam Mahmood. All rights reserved.</p>
+        <p>Built with Vanilla HTML5, CSS3, JavaScript &amp; Three.js.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       CV Information Modal
+       ========================================================================= -->
+  <div id="info-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal window">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); display: flex; align-items: center; justify-content: center; color: var(--accent-cyan);">
+          <i data-lucide="file-check"></i>
+        </div>
+        <div>
+          <h3 id="modal-title" style="font-size: 1.25rem; font-weight: 700; color: #ffffff;">Curriculum Vitae</h3>
+          <span style="font-size: 0.78rem; color: var(--accent-cyan); font-family: var(--font-mono);">Moazzam Mahmood • 2026 Edition</span>
+        </div>
+      </div>
+
+      <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px;">
+        Moazzam's formal Curriculum Vitae is currently configured for direct sharing. To receive the latest formatted PDF resume directly or discuss a tailored role, please connect via the contact form or direct email below.
+      </p>
+
+      <div style="background: rgba(10, 13, 20, 0.6); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 14px 18px; margin-bottom: 24px; font-size: 0.85rem; color: var(--text-muted);">
+        <strong style="color: #ffffff;">Note for site administrators:</strong> Drop your updated <code style="color: var(--accent-cyan); background: rgba(0, 242, 254, 0.1); padding: 2px 6px; border-radius: 4px;">Moazzam_Mahmood_CV.pdf</code> into <code style="color: var(--accent-cyan);">assets/cv/</code> to enable direct automatic downloads.
+      </div>
+
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="#contact" id="modal-contact-action" class="btn btn-primary" style="flex: 1;">
+          <i data-lucide="mail"></i> Go to Contact Form
+        </a>
+        <button type="button" class="btn btn-secondary copy-trigger" data-copy="moazzam.dev@example.com" style="flex: 1;">
+          <i data-lucide="copy"></i> Copy Email
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" aria-live="polite"></div>
+
+  <!-- =========================================================================
+       Scripts
+       ========================================================================= -->
+  <!-- Three.js (r128) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- GSAP & ScrollTrigger (3.12.5) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Project Application Scripts -->
+  <script src="js/three-scene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

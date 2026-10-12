@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0f17" />
+      <stop offset="100%" stop-color="#161b2a" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- Ambient Light Sphere -->
+  <circle cx="620" cy="180" r="140" fill="#f43f5e" opacity="0.08" filter="url(#subtleGlow)" />
+  <circle cx="200" cy="380" r="160" fill="#fbbf24" opacity="0.04" filter="url(#subtleGlow)" />
+
+  <!-- Browser / UI Window Frame Mockup -->
+  <rect x="60" y="50" width="680" height="400" rx="14" fill="#111420" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" />
+
+  <!-- Window Header -->
+  <rect x="60" y="50" width="680" height="42" rx="14" fill="#171b2b" />
+  <rect x="60" y="78" width="680" height="14" fill="#171b2b" />
+  <!-- Window Controls -->
+  <circle cx="86" cy="71" r="5" fill="#f43f5e" opacity="0.8" />
+  <circle cx="104" cy="71" r="5" fill="#fbbf24" opacity="0.8" />
+  <circle cx="122" cy="71" r="5" fill="#10b981" opacity="0.8" />
+
+  <!-- URL Bar -->
+  <rect x="160" y="60" width="480" height="22" rx="6" fill="#0d101d" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" />
+  <text x="180" y="75" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8" letter-spacing="0.5">https://roselitellc.com</text>
+  <circle cx="625" cy="71" r="3" fill="#10b981" />
+
+  <!-- Navigation Bar Inside Site -->
+  <g transform="translate(60, 92)">
+    <!-- Site Logo -->
+    <rect x="30" y="20" width="28" height="28" rx="6" fill="url(#roseAccent)" />
+    <polygon points="44,25 51,39 37,39" fill="#ffffff" />
+    <text x="68" y="38" font-family="'Inter', sans-serif" font-weight="700" font-size="15" fill="#f8fafc" letter-spacing="1">ROSE LITE <tspan fill="#f43f5e">LLC</tspan></text>
+    
+    <!-- Nav Links -->
+    <text x="440" y="37" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1" font-weight="500">Solutions</text>
+    <text x="510" y="37" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1" font-weight="500">Corporate</text>
+    <text x="585" y="37" font-family="'Inter', sans-serif" font-size="11" fill="#cbd5e1" font-weight="500">Contact</text>
+    <rect x="640" y="24" width="2" height="16" fill="#ffffff" opacity="0.1" />
+
+    <!-- Hero Content Left -->
+    <rect x="30" y="75" width="120" height="18" rx="9" fill="#f43f5e" fill-opacity="0.12" stroke="#f43f5e" stroke-opacity="0.3" stroke-width="1" />
+    <text x="42" y="87" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#fb7185" letter-spacing="0.8">BUSINESS CONSULTING</text>
+
+    <text x="30" y="130" font-family="'Inter', sans-serif" font-weight="800" font-size="28" fill="#ffffff">Strategic Excellence &amp;</text>
+    <text x="30" y="165" font-family="'Inter', sans-serif" font-weight="800" font-size="28" fill="url(#goldGlow)">Trusted Solutions</text>
+
+    <text x="30" y="195" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" width="340">Engineered for commercial impact and brand growth.</text>
+
+    <!-- CTAs -->
+    <rect x="30" y="220" width="130" height="36" rx="8" fill="url(#roseAccent)" />
+    <text x="56" y="242" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#ffffff">Get Consultation</text>
+
+    <rect x="175" y="220" width="110" height="36" rx="8" fill="#1e2438" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+    <text x="202" y="242" font-family="'Inter', sans-serif" font-weight="500" font-size="11" fill="#cbd5e1">Our Services</text>
+
+    <!-- Right Side Cards -->
+    <rect x="390" y="75" width="260" height="185" rx="12" fill="#181d30" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+    
+    <!-- Mini Graphic inside card -->
+    <rect x="410" y="95" width="220" height="85" rx="8" fill="#0d101a" />
+    <!-- Bar chart simulation -->
+    <rect x="430" y="145" width="22" height="25" rx="3" fill="#f43f5e" opacity="0.6" />
+    <rect x="465" y="125" width="22" height="45" rx="3" fill="#f43f5e" opacity="0.8" />
+    <rect x="500" y="115" width="22" height="55" rx="3" fill="#fb7185" />
+    <rect x="535" y="135" width="22" height="35" rx="3" fill="#fbbf24" opacity="0.7" />
+    <rect x="570" y="105" width="22" height="65" rx="3" fill="url(#roseAccent)" />
+
+    <text x="410" y="205" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#ffffff">Enterprise Growth Metrics</text>
+    <text x="410" y="222" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Consistent performance &amp; verified delivery</text>
+
+    <!-- Bottom Stat Strip -->
+    <rect x="30" y="280" width="620" height="50" rx="8" fill="#141827" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1" />
+    <text x="50" y="310" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#f43f5e">100%</text>
+    <text x="90" y="310" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Client Reliability</text>
+    <text x="240" y="310" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#fbbf24">24/7</text>
+    <text x="275" y="310" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Operational Support</text>
+    <text x="440" y="310" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#10b981">Verified</text>
+    <text x="495" y="310" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Commercial Platform</text>
+  </g>
+</svg>

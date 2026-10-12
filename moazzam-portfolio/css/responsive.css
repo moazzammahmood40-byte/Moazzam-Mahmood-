@@ -1,0 +1,337 @@
+/* ==========================================================================
+   MOAZZAM MAHMOOD — CINEMATIC 3D DEVELOPER PORTFOLIO
+   Responsive Breakpoints & Accessibility Styles
+   ========================================================================== */
+
+/* --- Tablet & Medium Displays (<= 1024px) --- */
+@media (max-width: 1024px) {
+  :root {
+    --nav-height: 72px;
+  }
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-3d-card {
+    max-width: 360px;
+  }
+
+  .portrait-frame {
+    height: 420px;
+  }
+}
+
+/* --- Tablets & Small Screens (<= 868px) --- */
+@media (max-width: 868px) {
+  .nav-menu,
+  .nav-actions .btn {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+    order: 2;
+  }
+
+  .hero-portrait-wrapper {
+    order: 1;
+    margin-top: 10px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-stats-strip {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .portrait-glow-sphere {
+    width: 340px;
+    height: 400px;
+  }
+
+  .portrait-3d-card {
+    max-width: 330px;
+  }
+
+  .portrait-frame {
+    height: 390px;
+  }
+
+  /* Reposition floating badges on tablet to avoid clipping */
+  .floating-badge.badge-1 {
+    top: 5%;
+    left: -15px;
+  }
+
+  .floating-badge.badge-2 {
+    top: 50%;
+    right: -20px;
+  }
+
+  .floating-badge.badge-3 {
+    bottom: 5%;
+    left: -10px;
+  }
+
+  .floating-badge.badge-4 {
+    top: -18px;
+    right: 10px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .section-tag {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-form-panel {
+    padding: 28px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+/* --- Mobile Phones (<= 576px) --- */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-section {
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: 60px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-stats-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .portrait-3d-card {
+    max-width: 290px;
+  }
+
+  .portrait-frame {
+    height: 350px;
+  }
+
+  /* Adapt badges for mobile layout */
+  .floating-badge {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+  }
+
+  .floating-badge.badge-1 {
+    top: 2%;
+    left: -10px;
+  }
+
+  .floating-badge.badge-2 {
+    display: none; /* Hide 2nd badge on very small screens to avoid clutter */
+  }
+
+  .floating-badge.badge-3 {
+    bottom: 2%;
+    left: -10px;
+  }
+
+  .floating-badge.badge-4 {
+    top: -15px;
+    right: 0px;
+  }
+
+  .scroll-indicator {
+    display: none; /* Free up vertical space on mobile */
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-thumbnail-wrapper {
+    height: 230px;
+  }
+
+  .project-content {
+    padding: 20px 18px;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .timeline-container {
+    padding-left: 0;
+  }
+
+  .timeline-line {
+    left: 16px;
+  }
+
+  .timeline-item {
+    padding-left: 48px;
+    margin-bottom: 36px;
+  }
+
+  .timeline-marker {
+    left: 5px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .timeline-card {
+    padding: 20px 16px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modal-content {
+    padding: 24px 18px;
+  }
+}
+
+/* --- Ultra-compact phones (<= 380px) --- */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .portrait-3d-card {
+    max-width: 260px;
+  }
+
+  .portrait-frame {
+    height: 310px;
+  }
+
+  .floating-badge {
+    display: none; /* Hide floating badges on ultra small displays to prevent clipping */
+  }
+}
+
+/* ==========================================================================
+   Accessibility: Reduced Motion Preference
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .floating-badge {
+    animation: none !important;
+  }
+
+  .mouse-wheel::after {
+    animation: none !important;
+  }
+
+  .status-dot,
+  .section-tag .dot {
+    animation: none !important;
+  }
+
+  .portrait-3d-card {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .portrait-img {
+    transition: none !important;
+  }
+}
